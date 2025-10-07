@@ -1,3 +1,4 @@
+//using BS for optimal solution .
 class Solution {
 public:
    
