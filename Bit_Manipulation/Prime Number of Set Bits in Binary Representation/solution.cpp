@@ -56,3 +56,4 @@ bool isprime(int n)
     }
 
 };
+// time complexity : O(n*logn)               space complexity : O(1) .
