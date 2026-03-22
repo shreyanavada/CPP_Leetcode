@@ -2,7 +2,7 @@ class Solution {
 public:
     char findTheDifference(string s, string t) {
         string ans = s+t;
-        char x=0;
+        char x=0;kk
         for(int i= 0; i<ans.size() ;i++)
         {
             x = x^ans[i];
