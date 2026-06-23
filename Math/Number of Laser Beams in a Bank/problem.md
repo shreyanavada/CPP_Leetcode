@@ -29,6 +29,7 @@ Explanation: Between each of the following device pairs, there is one beam. In t
  * bank[2][3] -- bank[3][2]
 Note that there is no beam between any device on the 0th row with any on the 3rd row.
 This is because the 2nd row contains security devices, which breaks the second condition.
+
 Example 2:
 
 <img width="244" height="325" alt="image" src="https://github.com/user-attachments/assets/5d575f19-2f7e-4be5-a1d7-50370650797f" />
