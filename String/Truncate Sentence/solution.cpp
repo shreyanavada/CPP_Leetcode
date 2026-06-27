@@ -8,29 +8,37 @@ public:
         {
             if(s[i] != ' ')
             {
-                ss +=s[i];
+                word +=s[i];
             }
             else
             {
                 
-                str.push_back(ss);
-                ss.clear();
+                str.push_back(word);
+                word.clear();
             }
             
         }
-        str.push_back(ss);
+        str.push_back(word);
         int count =0 ;
         string ans;
         for(int i=0 ;i<str.size() ;i++)
         {
             if(count <= k-1)
             {
+            if(count == k-1)
+            {
+                ans += str[i];
+                break;
+            }
+            else
+            {
                 ans += str[i] + " ";
                 count++;
             }
+            }
             
         }
-        ans += str[str.size()-1];
+        
         return ans;
         
     }
