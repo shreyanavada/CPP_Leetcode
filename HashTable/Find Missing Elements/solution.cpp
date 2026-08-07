@@ -1,22 +1,24 @@
 class Solution {
 public:
     vector<int> findMissingElements(vector<int>& nums) {
+        sort(nums.begin() , nums.end()); // solved it by sorting .
+        int counter = nums[0];
+        int i=0;
         vector<int>ans;
-        sort(nums.begin(),nums.end());
-        int min = *min_element(nums.begin() , nums.end());
-        int maxi =*max_element(nums.begin() , nums.end());
-       vector<int>hashi(maxi+1 , 0);
-       for(int i=0 ;i<nums.size();i++)
-       {
-        hashi[nums[i]]=1;
-       }
-       for(int i=0 ;i<hashi.size() ;i++)
-       {
-        if(hashi[i] == 0)
+        while(i < nums.size())
         {
-            ans.push_back(i);
+            if(counter == nums[i])
+            {
+                counter++;
+                i++;
+            }
+            else
+            {
+                ans.push_back(counter);
+                counter++;
+            }
         }
-       }
-       return ans;
+        return ans;
+        
     }
 };
