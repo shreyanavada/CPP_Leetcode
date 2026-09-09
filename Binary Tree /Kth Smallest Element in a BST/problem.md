@@ -8,7 +8,10 @@ Example 1:
 
 Input: root = [3,1,4,null,2], k = 1
 Output: 1
+
 Example 2:
+
+
 <img width="382" height="302" alt="image" src="https://github.com/user-attachments/assets/c4a43dc8-8fdd-4996-af4d-a0b608a6354c" />
 
 
